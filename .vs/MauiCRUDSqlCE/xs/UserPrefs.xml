@@ -1,0 +1,33 @@
+﻿<Properties StartupConfiguration="{F7EF4B63-07B4-4539-B5DE-8E80FFC3B880}|Default">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MyAppleMacCatalystID" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="MainPage.xaml">
+    <Files>
+      <File FileName="MainPage.xaml" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="MauiCRUDSqlCE" expanded="True">
+            <Node name="MauiCRUDSqlCE" expanded="True" selected="True">
+              <Node name="Platforms" expanded="True">
+                <Node name="Android" expanded="True" />
+              </Node>
+              <Node name="Resources" expanded="True" />
+              <Node name="MainPage.xaml" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.MauiCRUDSqlCE PreferredExecutionTarget="MyAppleMacCatalystID" />
+</Properties>

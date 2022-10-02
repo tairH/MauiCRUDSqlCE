@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiCRUDSqlCE.MainPage"
+             xmlns:viewmodel="clr-namespace:MauiCRUDSqlCE.ViewModels"
+             xmlns:model="clr-namespace:MauiCRUDSqlCE.Models"
+             x:DataType="viewmodel:MainPageViewModel">
+   
+    <!--
+    <StackLayout Margin="50">
+    <CollectionView ItemsSource="{Binding StudentsCollection}">
+	    <CollectionView.ItemTemplate>
+		    <DataTemplate>
+			    <StackLayout BackgroundColor="Pink" Orientation="Horizontal" HeightRequest="50">
+				    <Label Text="{Binding FirstName}"/>
+				    <Label Text="{Binding LastName}"/>
+				    <Label Text="{Binding Phone}"/>
+			    </StackLayout>
+		    </DataTemplate>
+	    </CollectionView.ItemTemplate>
+    </CollectionView>
+</StackLayout>
+    -->
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center"
+            HorizontalOptions="Center">
+
+            
+
+                <Grid ColumnDefinitions="*,*,*,*,*" RowDefinitions="*" >
+                    <Label 
+                             Grid.Column="0"
+                             Margin="21,21,0,0"
+                             Text="First Name" />
+                    <Label 
+                         Grid.Column="1"
+                         Margin="21,21,0,0"
+                         Text="Last Name" />
+                    <Label 
+                         Grid.Column="2"
+                         Margin="21,21,0,0"
+                         Text="Username" />
+                    <Label 
+                         Grid.Column="3"
+                         Margin="21,21,0,0"
+                         Text="Password" />
+                    <Label 
+                         Grid.Column="4"
+                         Margin="21,21,0,0"
+                         Text="Phone" />
+                </Grid>
+                <CollectionView ItemsSource="{Binding UsersCollection}" >
+	                    <CollectionView.ItemTemplate>
+		                     <DataTemplate>
+                                 <Grid x:DataType="model:ApplicationUser" ColumnDefinitions="*,*,*,*,*" RowDefinitions="Auto">
+                                     <Label
+                                         Grid.Column="0"
+                                         Margin="21,21,0,0"
+                                         Text="{Binding FirstName}" />
+                                     <Label
+                                         Grid.Column="1"
+                                         Margin="21,21,0,0"
+                                         Text="{Binding LastName}" />
+                                     <Label
+                                         Grid.Column="2"
+                                         Margin="21,21,0,0"
+                                         Text="{Binding UserName}" />
+                                     <Label
+                         
+                                         Grid.Column="3"
+                                         Margin="21,21,0,0"
+                                         Text="{Binding Password}" />
+                                     <Label
+                                         Grid.Column="4"
+                                         Margin="21,21,0,0"
+                                         Text="{Binding Phone}" />
+                                 </Grid>
+                             </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+                 
+            
+            <!--
+            <Image
+                Source="dotnet_bot.png"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Hello, World!"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Welcome to .NET Multi-platform App UI"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
+                FontSize="18"
+                HorizontalOptions="Center" />
+
+            <Button
+                x:Name="CounterBtn"
+                Text="Click me"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Center" />
+            -->
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
